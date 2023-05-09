@@ -1,20 +1,28 @@
 <script>
+import AboutUs from './MicroComponents/main-section/AboutUs.vue';
+import ChooseUs from './MicroComponents/main-section/Choose-us.vue';
+import ReviewERating from './MicroComponents/main-section/Review-e-rating.vue';
+import Service from './MicroComponents/main-section/Service.vue';
+
+
+
 export default {
-  name: 'Main'
-  
+    name: "Main",
+    components: { 
+      AboutUs, 
+      ChooseUs, 
+      ReviewERating, 
+      Service }
 }
 </script>
 
 <template>
   <main>
-    <div class="container">
       
-      <section>1 section</section>
-      <section>2 section</section>
-      <section>3 section</section>
-      <section>4 section</section>
-
-    </div>
+      <AboutUs />
+      <ChooseUs />
+      <ReviewERating />
+      <Service />  
 
   </main>
 </template>
