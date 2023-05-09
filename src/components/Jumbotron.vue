@@ -94,7 +94,7 @@ export default {
         }
 
         a img{
-          height: 60px;
+          height: 50px;
           padding: 10px;
           border-radius: 10px;
           background-color: rgb(112, 208, 247);

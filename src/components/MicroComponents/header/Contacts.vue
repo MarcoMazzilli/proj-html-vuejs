@@ -62,17 +62,17 @@ export default {
 .contacts-header{
     height: 55px;
     background-color: $brandSecondary;
-
+    
     .container{
         height: 100%;
         .row{
             height: 100%;
-
+            
             .col:first-child{
                 height: 100%;
                 display: flex;
                 align-items: center;
-
+                
                 i{
                     color: $brandMain;
                     margin: 10px;
@@ -84,6 +84,7 @@ export default {
             }
             .col:last-child{
                 height: 100%;
+                padding: 0 20px !important;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;

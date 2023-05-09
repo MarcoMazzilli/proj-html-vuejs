@@ -5,6 +5,7 @@ export default {
     data(){
         return{
             dbHeaderMenu,
+            activeLink : 0,
         }
     }
     
@@ -26,8 +27,8 @@ export default {
 
             <div class="col col-9">
                 <ul>
-                    <li v-for="link in dbHeaderMenu" :key="link" >
-                        <a :href="link.url">{{ link.name }}</a>
+                    <li v-for="(link,id) in dbHeaderMenu" :key="id" @click="activeLink = id" >
+                        <a :class="activeLink === id ? 'active' : null" :href="link.url">{{ link.name }}</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +71,7 @@ export default {
                         margin: 0;
 
                         li a{
-                            font-size: 21px;
+                            font-size: 1.3rem;
                             font-weight: 600;
                             margin: 0 20px;
                             text-decoration: none;
@@ -80,12 +81,15 @@ export default {
                             &:hover {
                                 color: $brandMain;
                             }
+                            &.active{
+                                color: $brandMain;
+                            }
                         }
                         li:last-of-type a{
                             color: white;
                             margin-right: 0;
                             background-color: $brandMain;
-                            padding: 15px 25px;
+                            padding: 13px 24px;
                             border-radius: 50px;
                             transition: .3s;
 
