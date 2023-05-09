@@ -58,10 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../scss/general/_variables.scss';
-.dbg{
-    background-color: rgba(255, 208, 0, 0.2);
-    border: 1px solid black;
-}
 
 .contacts-header{
     height: 55px;
@@ -79,11 +75,11 @@ export default {
 
                 i{
                     color: $brandMain;
-                    margin-right: 10px;
+                    margin: 10px;
                 }
                 span{
                     color: white;
-                    margin-right: 15px;
+                    margin-right: 25px;
                 }
             }
             .col:last-child{
