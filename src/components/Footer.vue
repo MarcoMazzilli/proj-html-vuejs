@@ -6,9 +6,26 @@ export default {
 </script>
 
 <template>
-  <h1>footer</h1>
+<div class="footer">
+
+<div class="container">
+
+  <h1>Footer</h1>
+
+</div>
+
+</div>
+
 </template>
 
 <style lang="scss" scoped>
+@import '../scss/general/variables';
+
+.footer{
+  min-height: 475px ;
+  background-color: #000000;
+}
+
+
 
 </style>

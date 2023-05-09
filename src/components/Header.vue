@@ -1,12 +1,24 @@
 <script>
+import Contacts from './MicroComponents/header/Contacts.vue';
+import Menus from './MicroComponents/header/Menus.vue';
+
 export default {
-  name: 'Header'
+  
+  components:{
+    Contacts,
+    Menus,
+
+  }
   
 }
 </script>
 
 <template>
-  <h1>header</h1>
+  
+  <Contacts />
+
+  <Menus />
+
 </template>
 
 <style lang="scss" scoped>
