@@ -1,6 +1,6 @@
 export default {
     mail                : 'info@example.com',
-    phoneNumber         : '+1(817)901 337',
+    phoneNumber         : '+1(817)901 3377',
     
     social : [
         {
