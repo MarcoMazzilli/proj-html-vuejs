@@ -20,9 +20,12 @@ export default {
   <main>
       
       <AboutUs />
-      <ChooseUs />
-      <ReviewERating />
+
       <Service />  
+
+      <ChooseUs />
+      
+      <ReviewERating />
 
   </main>
 </template>
@@ -32,7 +35,7 @@ export default {
 
 main{
   min-height: 300px;
-  background-color: $backgroundSecondary;
+  // background-color: $backgroundSecondary;
 }
 
 </style>
