@@ -29,5 +29,4 @@ export default {
             logo : 'fa-brands fa-instagram'
         },
     ]
-
 }

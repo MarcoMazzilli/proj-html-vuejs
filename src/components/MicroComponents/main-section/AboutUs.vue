@@ -1,22 +1,51 @@
+
 <script>
+import { aboutUs } from '../../../data/dbMainSection';
+
 export default {
-    
+    data(){
+        return{
+            aboutUs,
+
+        }
+    },
+    methods:{
+  getImage(img){
+    return new URL(img, import.meta.url).href;
+  }
+}
 }
 
 </script>
 
 <template>
     <section class="about-us">
-        <img class="small-dog-bg" src="../../../../public/aboutUs-img/dog-logo.png" alt="">
+        <img class="small-dog-bg" src="/aboutUs-img/dog-logo.png" alt="">
         <div class="container">
 
             <div class="row">
 
                 <div class="col left">
-                    <img src="../../../../public/aboutUs-img/about.png" alt="">
+                    <img src="/aboutUs-img/about.png" alt="">
                 </div>
 
-                <div class="col right">right</div>
+                <div class="col right">
+                    <div class="info">
+                        <div class="section-name">
+                            <img :src="getImage(`/aboutUs-img/${aboutUs.img}.png`)" :alt="aboutUs.img">
+                            <h5>{{aboutUs.sectionName}}</h5>
+                        </div>
+
+                        <div class="section-description">
+
+                            <h2>{{ aboutUs.sectionTitle }}</h2>
+                            <p>{{ aboutUs.sectionDescriptionTop }}</p>
+                            <p>{{ aboutUs.sectionDescriptionBottom }}</p>
+
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
             
@@ -35,14 +64,48 @@ export default {
 
     .small-dog-bg{
         position: absolute;
-        width: 100px;
+        width: 250px;
+        right: 0;
+        top: 85px;
     }
     .container{
         .row{
+            padding: 85px 15px;
             .col.left{
-                padding: 85px 25px;
                 img{
                     width: 90%;
+                }
+            }
+            .col.right{
+                display: flex;
+                align-items: center;
+                .info{
+                    margin-left: 15px;
+                    padding:  35px 0px;
+                    height: 80%;
+                    .section-name{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 30px;
+                        img{
+                            width: 40px;
+                        }
+                        h5{
+                            color: $brandSecondary;
+                            font-size: 1rem;
+                        }
+                    }
+                    .section-description{
+                        h2{
+                            font-size: 2.5rem;
+                            font-weight: 800;
+                            margin-bottom: 25px;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
                 }
             }
         }

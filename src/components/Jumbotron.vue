@@ -21,7 +21,7 @@ export default {
 
         <div class="cta-buttons">
           <span>Get Started</span>
-          <a href="#"><img src="../../public/jumbotron-img/play.png" alt="Play png"></a>
+          <a href="#"><img src="/jumbotron-img/play.png" alt="Play png"></a>
         </div>
 
       </div>
@@ -37,7 +37,7 @@ export default {
 
 .wrapper{
   height: 575px;
-  background-image: url(../../public/jumbotron-img/b.png);
+  background-image: url(/jumbotron-img/b.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
