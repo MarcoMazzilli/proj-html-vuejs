@@ -22,7 +22,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/general/general';
+@import '../../../scss/general/general';
 .ul-social{
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 <script>
 import dbContacts from '../../../data/dbContacts';
-import Socialbox from '../Socialbox.vue';
+import Socialbox from '../generalMicro/Socialbox.vue';
 
 export default {
     data() {
