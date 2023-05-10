@@ -22,37 +22,52 @@ const service = {
             img : 'd-1' ,
             title: 'Pet Sitting',
             description: 'The readable content of a page when looking at its layout.',
-
         },
         {
             img : 'd-2',
             title: 'Puppy Sitting',
             description: 'The readable content of a page when looking at its layout.',
-
         },
         {
             img : 'd-3' ,
             title: 'Dog Walking',
             description: 'The readable content of a page when looking at its layout.',
-
         },
         {
             img : 'd-4',
             title: 'Night Care',
             description: 'The readable content of a page when looking at its layout.',
-
         },
         {
             img : 'd-5' ,
             title: 'Pet Sitting',
             description: 'The readable content of a page when looking at its layout.',
-
         },
     ]
-
-    
-
-
 }
 
-export {aboutUs,service}
+const chooseUs = {
+    sectionName :
+    'Choose Us',
+    sectionTitle :
+    'Why Choose Us?',
+    card : [
+        {
+            img : 'w-3' ,
+            title: 'Safety First',
+            description: 'It is a long established fact that a reader will be distructed by the readable content of a page when looking at its layout.',
+        },
+        {
+            img : 'w-2' ,
+            title: 'Play Yards',
+            description: 'It is a long established fact that a reader will be distructed by the readable content of a page when looking at its layout.',
+        },
+        {
+            img : 'w-1' ,
+            title: 'Monitor Your Pets',
+            description: 'It is a long established fact that a reader will be distructed by the readable content of a page when looking at its layout.',
+        }
+    ]
+}
+
+export {aboutUs,service,chooseUs}
