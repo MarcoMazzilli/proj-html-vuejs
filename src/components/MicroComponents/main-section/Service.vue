@@ -25,14 +25,14 @@ export default {
     <div class="container">
 
         <div class="row top">
-
+            <!-- SECTION NAME -->
             <div class="col top">
                 <h5>{{ service.sectionName }}</h5>
                 <h2>{{ service.sectionTitle }}</h2>
             </div>
 
         </div>
-
+        <!-- CARDS CONTAINER -->
         <div class="row bottom">
 
             <div class="col bottom"  v-for="(card,id) in service.card" :key="id" >
@@ -109,11 +109,13 @@ export default {
                     font-weight: 600;
                 }
             }
+            // CONTAINER CARDS //
             .col.bottom{
                 display: flex;
                 padding: 20px;
                 width: calc(100% / 5);
-
+                
+                // MM-CARD //
                 .mm-card{
                     height: 305px;
                     width: 190px;

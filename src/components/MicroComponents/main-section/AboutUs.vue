@@ -24,18 +24,19 @@ export default {
         <div class="container">
 
             <div class="row">
-
+                <!-- IMGAGE LEFT -->
                 <div class="col left">
                     <img src="/assets/main-section/aboutUs-img/about.png" alt="Dog image">
                 </div>
-
+                <!-- INFO RIGHT -->
                 <div class="col right">
                     <div class="info">
+                        <!-- SECTION NAME  -->
                         <div class="section-name">
                             <img :src="`/public/assets/general/${aboutUs.img}.png`" :alt="aboutUs.img">
                             <h5>{{aboutUs.sectionName}}</h5>
                         </div>
-
+                        <!-- SECTION DESCRIPTION -->
                         <div class="section-description">
 
                             <h2>{{ aboutUs.sectionTitle }}</h2>

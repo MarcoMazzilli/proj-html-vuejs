@@ -54,12 +54,12 @@ export default {
             
             .col{
                 height: 100%;
-
+                // COL LEFT
                 &:first-child{
                     display: flex;
                     align-items: center;
                 }
-
+                // COL RIGHT
                 &:last-child{
                     display: flex;
                     align-items: center;
@@ -86,7 +86,7 @@ export default {
                                 color: $brandMain;
                             }
                         }
-
+                        // LAST BUTTON OF MENU LIST
                         li:last-of-type a{
                             color: white;
                             margin-right: 0;

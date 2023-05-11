@@ -11,10 +11,8 @@ export default {
       dbContacts,
       navLinks,
       isActive : false,
-
     }
   }
-  
 }
 </script>
 
@@ -57,29 +55,31 @@ export default {
           :logo="social.logo"
         />
       </ul>
-    </div> 
-<!-- QUESTO VA IN LOOP -->
-    <div class="col" v-for="(section,i) in navLinks" :key="i">
-      <h3>{{ section.title }}</h3>
-      <ul>
-         <li v-for="(link,id) in section.links" :key="id">
-          <a href="#">{{ link }}</a></li>
-      </ul>
     </div>
 
+      <!-- NAVBAR -->
+      <nav class="col" v-for="(section,i) in navLinks" :key="i">
+        <h3>{{ section.title }}</h3>
+        <ul>
+          <li v-for="(link,id) in section.links" :key="id">
+            <a href="#">{{ link }}</a></li>
+          </ul>
+        </nav>
+        
     <div id="contact-me" class="col col-3">
-
+          
       <h3>Contact Me</h3>
-
-
+      <!-- ADDRESS -->
       <div class="info">
         <i class="fa-solid fa-location-arrow"></i>
         <span>{{ dbContacts.address }}</span>
       </div>
+      <!-- PHONE NUMBER -->
       <div class="info">
         <i class="fa-solid fa-phone"></i>
         <span>{{ dbContacts.phoneNumber }}</span>
       </div>
+      <!-- EMAIL -->
       <div class="info">
         <i class="fa-solid fa-envelope"></i>
         <span>{{ dbContacts.mail }}</span>
@@ -89,17 +89,14 @@ export default {
 
   </div>
 
-
 </div>
-
 </section>
+<!-- COPIRIGHT  -->
 <section class="copiright">
 
   <span>Copyright 2022 by AttdogMilo.com</span>
 
 </section>
-
-
 </template>
 
 <style lang="scss" scoped>
@@ -152,7 +149,6 @@ export default {
           width: 95%;
           display: flex;
           padding: 3px;
-          outline: 2px solid rgba(0,0,0,0);
           background-color: white;
 
           &:hover{

@@ -128,7 +128,6 @@ export default {
           border-radius: 10px;
           background-color: rgb(112, 208, 247);
           cursor: pointer;
-
           
         }
       }

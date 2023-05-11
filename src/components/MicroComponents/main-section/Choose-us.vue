@@ -23,35 +23,37 @@ export default {
       <div class="col left">
         <img src="/public/assets/main-section/chooseUsSection-img/why.png" alt="">
       </div>
-
       <div class="col right">
-
+        
+        <!-- SECTION IMAGE -->
         <div class="section-name">
           <img src="../../../../public/assets/general/dog-icon.png" alt="dog icon">
           <h5>{{chooseUs.sectionName}}</h5>
         </div>
-
+        
+        <!-- SECTION NAME -->
         <div class="section-title">
           <h2>{{ chooseUs.sectionTitle }}</h2>
         </div>
 
+        <!-- CARDS CONTAINER -->
         <div class="cards-container">
           
+          <!-- CARD -->
           <div class="mm-card" v-for="(card,id) in chooseUs.card" :key="id">
-
+            <!-- image -->
             <div class="img">
               <img :src="`/public/assets/main-section/chooseUsSection-img/${card.img}.png`" alt="Illustration">
             </div>
-
+            <!-- description -->
             <div class="description">
               <h4>{{ card.title }}</h4>
               <p>{{ card.description }}</p>
             </div>
 
           </div>
+
         </div>
-
-
 
       </div>
 

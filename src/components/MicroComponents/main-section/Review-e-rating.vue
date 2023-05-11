@@ -33,7 +33,7 @@ export default {
   <section class="review-rating">
     <div class="container">
       <div class="row">
-
+        <!-- COL LEFT -->
         <div class="col col-4 left">
 
           <div class="section-name">
@@ -45,7 +45,7 @@ export default {
             <h2>{{ reviewRating.sectionTitle}}</h2>
             <p>{{ reviewRating.sectionDescription }}</p>
           </div>
-
+          <!-- REVIEW STARS -->
           <div class="stars">
             <i  
             v-for="star in reviewRating.sectionRating" 
@@ -53,10 +53,9 @@ export default {
             class="fa-solid fa-star"></i>
           </div>
 
-
-
         </div>
-
+        
+        <!-- SWIPER RIGHT -->
         <div class="col col-8 right">
           <swiper :navigation="true" :modules="modules" class="mySwiper review" :slides-per-view="2" :loop="Infinity">
 
@@ -90,6 +89,7 @@ export default {
             </swiper-slide>
           </swiper>
         </div>
+        <!-- /SWIPER -->
 
       </div>
     </div>
