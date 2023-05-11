@@ -27,16 +27,21 @@ export default {
 
                 <div class="col">
 
-                    <!-- CONTACTS  -->
+                    <!-- email -->
                     <div class="mail">
-                        <i class="fa-solid fa-envelope"></i></div>
-                        <span>{{ dbContacts.mail }}</span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span>{{ dbContacts.mail }}</span>
 
+                    <!-- phone number -->
                     <div class="phone">
-                        <i class="fa-solid fa-phone"></i></div>
-                        <span>{{ dbContacts.phoneNumber }}</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span>{{ dbContacts.phoneNumber }}</span>
+
                 </div>
 
+                <!-- SOCIAL LIST -->
                 <div class="col">
 
                     <Socialbox v-for="social in dbContacts.social" :key="social"
@@ -45,11 +50,9 @@ export default {
                     :logo="social.logo"
                     />
 
-
-
                 </div>
-            </div>
-            
+                
+            </div> 
         </div>
         
         

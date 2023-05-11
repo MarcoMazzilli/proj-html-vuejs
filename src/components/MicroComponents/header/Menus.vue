@@ -7,36 +7,36 @@ export default {
             dbHeaderMenu,
             activeLink : 0,
         }
-    }
-    
+    } 
 }
 </script>
 
 <template>
 <div class="menus-header">
-
     <div class="container">
         
         <div class="row">
-
+            <!-- LOGO -->
             <div class="col col-3">
-                <a href="">
+                <a href="#">
                     <img src="/public/assets/general/logo.png" alt="Logo Dog-Milo">
                 </a>
             </div>
-
+            
+            <!-- NAVBAR -->
             <div class="col col-9">
-                <ul>
-                    <li v-for="(link,id) in dbHeaderMenu" :key="id" @click="activeLink = id" >
-                        <a :class="activeLink === id ? 'active' : null" :href="link.url">{{ link.name }}</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li v-for="(link,id) in dbHeaderMenu" :key="id" @click="activeLink = id" >
+                            <a :class="activeLink === id ? 'active' : null" :href="link.url">{{ link.name }}</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
         </div>
 
     </div>  
-
 </div>
 </template>
 
@@ -54,11 +54,12 @@ export default {
             
             .col{
                 height: 100%;
+
                 &:first-child{
                     display: flex;
                     align-items: center;
-                    
                 }
+
                 &:last-child{
                     display: flex;
                     align-items: center;
@@ -85,6 +86,7 @@ export default {
                                 color: $brandMain;
                             }
                         }
+
                         li:last-of-type a{
                             color: white;
                             margin-right: 0;

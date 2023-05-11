@@ -15,8 +15,10 @@ export default {
 
 <template>
   
+  <!--HEADER TOP -->
   <Contacts />
 
+  <!-- HEADER BOTTOM -->
   <Menus />
 
 </template>
