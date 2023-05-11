@@ -26,7 +26,7 @@ export default {
         <img src="/public/assets/footer-img/news.png" alt="Dogs Image">
       </div>
 
-      <div class="col right">
+      <div class="col right" id="newsletter">
 
         <h4>Subscribe to Our Newsletter</h4>
         <!-- questo ha il focus!!! -->

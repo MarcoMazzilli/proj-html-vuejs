@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <img class="small-dog-bg" src="/assets/general/dog-logo.png" alt="Dog image">
         <div class="container">
 

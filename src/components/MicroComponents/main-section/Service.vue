@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-<section class="service">
+<section class="service" id="services">
 
     <img class="dog-left" src="/public/assets/general/dog-left.png" alt="">
     <img class="dog-right" src="/assets/general/dog-logo.png" alt="">

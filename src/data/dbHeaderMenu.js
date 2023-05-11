@@ -5,11 +5,11 @@ export default [
     },
     {
         name : 'About',
-        url : '#' ,
+        url : '#about' ,
     },
     {
         name : 'Services',
-        url : '#' ,
+        url : '#services' ,
     },
     {
         name : 'Training',
@@ -21,6 +21,6 @@ export default [
     },
     {
         name : 'Get In Toch!',
-        url : '#' ,
+        url : '#newsletter' ,
     }
 ]
