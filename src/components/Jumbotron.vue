@@ -26,7 +26,10 @@ export default {
 </script>
 
 <template>
-  <swiper :navigation="true" :modules="modules" class="mySwiper">
+  <swiper 
+  :navigation="true" 
+  :modules="modules" 
+  class="mySwiper">
 
     <swiper-slide v-for="(card,id) in dbJumbotron" :key="id">
 

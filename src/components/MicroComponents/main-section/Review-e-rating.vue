@@ -1,5 +1,10 @@
 <script>
 import { reviewRating } from '../../../data/dbMainSection';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 export default {
     data(){
       return{
@@ -10,7 +15,16 @@ export default {
       getImage(img){
         return new URL(img, import.meta.url).href;
       }
-    }
+    },
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Navigation],
+      };
+    },
 }
 
 </script>
@@ -44,32 +58,37 @@ export default {
         </div>
 
         <div class="col col-8 right">
+          <swiper :navigation="true" :modules="modules" class="mySwiper review" :slides-per-view="2" :loop="Infinity">
 
-          <div class="mm-card" v-for="(card,id) in reviewRating.cards" :key="id">
+            <swiper-slide  v-for="(card,id) in reviewRating.cards" :key="id">
 
-            <div class="stars">
-              <i v-for="rate in card.rating" :key="rate" class="fa-solid fa-star"></i>
-            </div>
-
-            <div class="card-description">
-              <h6>{{ card.title }}</h6>
-              <p>{{ card.description }}</p>
-            </div>
-
-            <div class="card-user-information">
-              <div class="img-container">
-                <img :src="`/public/assets/main-section/review-rating-img/${card.userAvatar}.png`" alt="Avatar">
+              <div class="mm-card">
+                
+                <div class="stars">
+                  <i v-for="rate in card.rating" :key="rate" class="fa-solid fa-star"></i>
+                </div>
+                
+                <div class="card-description">
+                  <h6>{{ card.title }}</h6>
+                  <p>{{ card.description }}</p>
+                </div>
+                
+                <div class="card-user-information">
+                  <div class="img-container">
+                    <img :src="`/public/assets/main-section/review-rating-img/${card.userAvatar}.png`" alt="Avatar">
+                  </div>
+                  
+                  <div class="description-container">
+                    <span class="name">{{ card.userName }}</span>
+                    <span class="job">{{ card.userJob }}</span>
+                  </div>
+                
+                </div>
+              
               </div>
-
-              <div class="description-container">
-                <span class="name">{{ card.userName }}</span>
-                <span class="job">{{ card.userJob }}</span>
-              </div>
-
-            </div>
-
-          </div>
-
+            
+            </swiper-slide>
+          </swiper>
         </div>
 
       </div>

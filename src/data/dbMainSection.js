@@ -96,6 +96,22 @@ const reviewRating = {
             userName : "Tobias May",
             userJob : "UI/UX Designer",
         },
+        {
+            rating : 5,
+            title: 'Great Place',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when",
+            userAvatar : 't1',
+            userName : "Tobias May",
+            userJob : "UI/UX Designer",
+        },
+        {
+            rating : 5,
+            title: 'Great Place',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when",
+            userAvatar : 't1',
+            userName : "Tobias May",
+            userJob : "UI/UX Designer",
+        },
     ]
 }
 
