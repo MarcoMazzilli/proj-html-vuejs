@@ -1,35 +1,61 @@
 <script>
+import dbJumbotron from '../data/dbJumbotron';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 export default {
-  name: 'Jumbotron'
+  name: 'Jumbotron',
+  data(){
+    return{
+      dbJumbotron,
+    }
+  },
+  components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Navigation],
+      };
+    },
   
 }
 </script>
 
 <template>
-  <div class="wrapper">
+  <swiper :navigation="true" :modules="modules" class="mySwiper">
 
-    <div class="container">
-      <div class="hero-description">
+    <swiper-slide v-for="(card,id) in dbJumbotron" :key="id">
 
-        <div class="title">
-          <h1> Welcome to  <span>DogMilo</span> Pets </h1>
+      <div class="wrapper">
+        
+        <div class="container">
+          <div class="hero-description">
+            
+            <div class="title">
+              <h1 v-html="card.title"></h1>
+            </div>
+            
+            <div class="description">
+              <span>{{ card.description }}</span>
+            </div>
+            
+            <div class="cta-buttons">
+              <span>Get Started</span>
+              <a href="#"><img src="/public/assets/jumbotron-img/play.png" alt="Play png"></a>
+            </div>
+            
+          </div>
         </div>
-
-        <div class="description">
-          <span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-        </div>
-
-        <div class="cta-buttons">
-          <span>Get Started</span>
-          <a href="#"><img src="/public/assets/jumbotron-img/play.png" alt="Play png"></a>
-        </div>
-
+        
       </div>
       
-      
-    </div>
-
-  </div>
+    </swiper-slide>
+    
+  </swiper>
 </template>
 
 <style lang="scss" scoped>
