@@ -21,13 +21,13 @@ export default {
     <div class="row">
 
       <div class="col left">
-        <img src="../../../assets/main-img/chooseUsSection-img/why.png" alt="">
+        <img src="/public/assets/main-section/chooseUsSection-img/why.png" alt="">
       </div>
 
       <div class="col right">
 
         <div class="section-name">
-          <img src="../../../assets/main-img/chooseUsSection-img/dog-icon.png" alt="dog icon">
+          <img src="../../../../public/assets/general/dog-icon.png" alt="dog icon">
           <h5>{{chooseUs.sectionName}}</h5>
         </div>
 
@@ -40,7 +40,7 @@ export default {
           <div class="mm-card" v-for="(card,id) in chooseUs.card" :key="id">
 
             <div class="img">
-              <img :src="getImage(`../../../assets/main-img/chooseUsSection-img/${card.img}.png`)" alt="Illustration">
+              <img :src="`/public/assets/main-section/chooseUsSection-img/${card.img}.png`" alt="Illustration">
             </div>
 
             <div class="description">

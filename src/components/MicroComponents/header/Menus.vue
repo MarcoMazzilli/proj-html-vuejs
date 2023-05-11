@@ -21,7 +21,7 @@ export default {
 
             <div class="col col-3">
                 <a href="">
-                    <img src="/logo.png" alt="Logo Dog-Milo">
+                    <img src="/public/assets/general/logo.png" alt="Logo Dog-Milo">
                 </a>
             </div>
 

@@ -25,7 +25,7 @@ export default {
     <div class="row">
 
       <div class="col left ">
-        <img src="../assets/footer-img/news.png" alt="Dogs Image">
+        <img src="/public/assets/footer-img/news.png" alt="Dogs Image">
       </div>
 
       <div class="col right">

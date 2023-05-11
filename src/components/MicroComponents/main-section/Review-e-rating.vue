@@ -23,7 +23,7 @@ export default {
         <div class="col col-4 left">
 
           <div class="section-name">
-            <img src="../../../assets/main-img/chooseUsSection-img/dog-icon.png" alt="dog icon">
+            <img src="/public/assets/general/dog-icon.png" alt="dog icon">
             <h5>Review & Rating</h5>
           </div>
 
@@ -58,7 +58,7 @@ export default {
 
             <div class="card-user-information">
               <div class="img-container">
-                <img :src="getImage(`../../../assets/main-img/review-rating-img/${card.userAvatar}.png`)" alt="Avatar">
+                <img :src="`/public/assets/main-section/review-rating-img/${card.userAvatar}.png`" alt="Avatar">
               </div>
 
               <div class="description-container">

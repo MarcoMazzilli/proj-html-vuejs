@@ -20,19 +20,19 @@ export default {
 
 <template>
     <section class="about-us">
-        <img class="small-dog-bg" src="/aboutUs-img/dog-logo.png" alt="">
+        <img class="small-dog-bg" src="/assets/general/dog-logo.png" alt="Dog image">
         <div class="container">
 
             <div class="row">
 
                 <div class="col left">
-                    <img src="/aboutUs-img/about.png" alt="">
+                    <img src="/assets/main-section/aboutUs-img/about.png" alt="Dog image">
                 </div>
 
                 <div class="col right">
                     <div class="info">
                         <div class="section-name">
-                            <img :src="getImage(`/aboutUs-img/${aboutUs.img}.png`)" :alt="aboutUs.img">
+                            <img :src="`/public/assets/general/${aboutUs.img}.png`" :alt="aboutUs.img">
                             <h5>{{aboutUs.sectionName}}</h5>
                         </div>
 

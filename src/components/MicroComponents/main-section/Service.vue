@@ -19,8 +19,8 @@ export default {
 <template>
 <section class="service">
 
-    <img class="dog-left" src="../../../assets/main-img/serviceSection-img/dog-left.png" alt="">
-    <img class="dog-right" src="../../../assets/main-img/serviceSection-img/dog-logo.png" alt="">
+    <img class="dog-left" src="/public/assets/general/dog-left.png" alt="">
+    <img class="dog-right" src="/assets/general/dog-logo.png" alt="">
 
     <div class="container">
 
@@ -38,7 +38,7 @@ export default {
             <div class="col bottom"  v-for="(card,id) in service.card" :key="id" >
 
                 <div class="mm-card">
-                    <img :src="getImage(`../../../assets/main-img/serviceSection-img/${card.img}.png`)" alt="dog icon">
+                    <img :src="`/assets/main-section/serviceSection-img/${card.img}.png`" alt="dog icon">
                     <h6>{{ card.title }}</h6>
                     <p>{{ card.description }}</p>
                     <div class="mm-button">
