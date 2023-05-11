@@ -89,7 +89,7 @@ export default {
 }
 
 .review-rating{
-  min-height: 500px;
+  min-height: 640px;
   padding-top: 90px;
 
   .container{

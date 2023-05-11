@@ -11,36 +11,31 @@ export default {
 
 <template>
   
-    <ul class="ul-social">
-        <li>
-            <a :class="name" :href="url">
+    <!-- <ul class="ul-social"> -->
+        <li class="li-social">
+            <a class="social-icons" :class="name" :href="url">
                 <i :class="logo"></i>
             </a>
         </li>
-    </ul>
+    <!-- </ul> -->
 
 </template>
 
 <style lang="scss" scoped>
 @import '../../../scss/general/general';
-.ul-social{
-    display: flex;
-    align-items: center;
+.li-social{
     list-style: none;
-    height: 100%;
-    margin: 0;
 
     .social-icons{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        width: 25px;
-        aspect-ratio: 1/1;
-        border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2px;
+        text-decoration: none;
+        width: 25px;
+        aspect-ratio: 1/1;
+        margin: 0 2px;
+        border-radius: 5px;
+        color: white;
         &.facebook{
             background-color: rgb(48, 63, 191);
         }
